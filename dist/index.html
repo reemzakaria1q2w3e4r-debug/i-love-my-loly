@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lolo & Loly's World Adventures</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'lulu-pink': '#FF6B8B',
+              'lulu-teal': '#4ECDC4',
+              'lulu-yellow': '#FFD166',
+              'rose-gold': '#E0BFB8',
+              'rose-dark': '#B76E79',
+              'warm-cream': '#FFF5F1',
+              'gold-accent': '#D4AF37',
+            },
+            fontFamily: {
+              comic: ['"Comic Sans MS"', 'cursive', 'sans-serif'],
+              sans: ['"Segoe UI"', 'sans-serif'],
+              'great-vibes': ['"Great Vibes"', 'cursive'],
+              'playfair': ['"Playfair Display"', 'serif'],
+            },
+            animation: {
+              'float': 'float 6s ease-in-out infinite',
+              'heartbeat': 'heartbeat 1.5s ease-in-out infinite',
+              'fade-in-up': 'fadeInUp 0.5s ease-out',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-20px)' },
+              },
+              heartbeat: {
+                '0%, 100%': { transform: 'scale(1)' },
+                '50%': { transform: 'scale(1.1)' },
+              },
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;600&family=Nunito:wght@400;600;700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+      body {
+        font-family: 'Nunito', sans-serif;
+      }
+      h1, h2, h3, .fun-font {
+        font-family: 'Fredoka', sans-serif;
+      }
+      .font-great-vibes {
+        font-family: 'Great Vibes', cursive;
+      }
+      .font-playfair {
+        font-family: 'Playfair Display', serif;
+      }
+      /* Custom Scrollbar */
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: #FFF5F1;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background-color: #E0BFB8;
+        border-radius: 20px;
+      }
+      /* Romantic Frame Style */
+      .romantic-frame {
+        position: relative;
+        border: 8px double #E0BFB8;
+        border-radius: 24px;
+        box-shadow: 0 10px 25px -5px rgba(183, 110, 121, 0.3);
+        background: white;
+        overflow: hidden;
+      }
+      .romantic-frame::before {
+        content: '♥';
+        position: absolute;
+        top: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #FFF5F1;
+        color: #B76E79;
+        padding: 0 10px;
+        font-size: 20px;
+        z-index: 10;
+      }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-KXFuin89.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+</body>
+</html>
